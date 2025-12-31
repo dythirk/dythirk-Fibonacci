@@ -21,11 +21,11 @@ public class Fibonacci {
             return fibo;
         }
         else
-            for (int i = 1; i <= n; i++) {
+            for (int i = 2; i <= n; i++) {
                 fibo += a;
                 a = fibo;
 
             }
-        return fibo;
+            return fibo;
     }
 }
