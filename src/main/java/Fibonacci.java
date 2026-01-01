@@ -16,14 +16,16 @@ public class Fibonacci {
      */
     public int fib(int n){
         int fibo = 0;
-        int a = 1;
+        int a = 0;
+        int b = 1;
         if (n == 1) {
-            return fibo;
+            return 1;
         }
         else
             for (int i = 2; i <= n; i++) {
                 fibo += a;
-                a = fibo;
+                a = b;
+                b = b + fibo;
 
             }
             return fibo;
