@@ -22,7 +22,7 @@ public class Fibonacci {
             return 1;
         }
         else
-            for (int i = 1; i <= n + 1; i++) {
+            for (int i = 1; i <= n + 3; i++) {
                 fibo = a + b;
                 a = b;
                 b = fibo;
